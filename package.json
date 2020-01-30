@@ -1,0 +1,11 @@
+{
+  "name": "parcel-pid-data",
+  "version": "1.0.0",
+  "description": "This is to fetch data from the NGIS api, by passing a token, api endpoint, refferal user id, participant id to retrieve specific data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Punal Chotrani",
+  "license": "ISC"
+}
