@@ -4,8 +4,8 @@
 
 This repository uses ParcelJS for task automation, bundling and:
 
-- ESLint for linting the source JavaScript files
-- Babel for transpiling of ES6 to ES5
+- Typescript
+- Preact JS
 - JS minifications
 
 You should be able to install all dependencies by running `npm nstall` from the project root.

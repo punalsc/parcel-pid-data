@@ -4,6 +4,7 @@
   "description": "This is to fetch data from the NGIS api, by passing a token, api endpoint, refferal user id, participant id to retrieve specific data.",
   "main": "index.js",
   "scripts": {
+    "start": "parcel src/html/index.html",
     "test": "npm test"
   },
   "author": "Punal Chotrani",
@@ -12,6 +13,7 @@
     "preact": "^10.2.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
   }
 }
