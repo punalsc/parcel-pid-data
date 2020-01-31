@@ -117,8 +117,39 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../ts/widget.ts":[function(require,module,exports) {
-var token = document.getElementById("pid-data").getAttribute("data-endpoint");
+})({"../ts/methods/functions.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.myFunctions = {
+  init: function init() {
+    return this.loadingText("hey11111");
+  },
+  loadingText: function loadingText(text) {
+    return text;
+  }
+};
+exports.default = exports.myFunctions;
+},{}],"../ts/widget.ts":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var functions_1 = __importDefault(require("./methods/functions"));
+
+var UserInputToken = document.getElementById("pid-data").getAttribute("data-token"),
+    UserInputEndpoint = document.getElementById("pid-data").getAttribute("data-endpoint"),
+    UserInputReferalUID = document.getElementById("pid-data").getAttribute("data-referal-uid");
 
 var GetPidData = function GetPidData(endpoint, referalUID, token) {
   return {
@@ -128,9 +159,9 @@ var GetPidData = function GetPidData(endpoint, referalUID, token) {
   };
 };
 
-console.log(GetPidData("hey", "Yo", "Help"));
-console.log(token);
-},{}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+console.log(GetPidData(UserInputEndpoint, UserInputReferalUID, UserInputToken));
+console.log(functions_1.default.init());
+},{"./methods/functions":"../ts/methods/functions.ts"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

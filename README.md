@@ -5,7 +5,7 @@
 This repository uses ParcelJS for task automation, bundling and:
 
 - Typescript
-- Preact JS
+- Vanilla JS
 - Jest
 
 You should be able to install all dependencies by running `npm nstall` from the project root.
@@ -18,17 +18,9 @@ You will need to insert this snippet into the HTML where you want to run the plu
 
 ```html
 <div
-  class="beautiful-container"
-  data-prop-name="preact habitat"
-  data-prop-version="v3.0.0"
-  data-prop-theme-color="green"
->
-  <script type="application/json">
-    {
-      "endpoint": "Add endpoint here",
-      "referalUID": "Add Referal-UID here",
-      "token": "Please add token here"
-    }
-  </script>
-</div>
+  id="pid-data"
+  data-endpoint="www.google.com"
+  data-referal-uid="add Referal Uid here"
+  data-token="add token here"
+></div>
 ```
