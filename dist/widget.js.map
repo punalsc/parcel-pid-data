@@ -1,0 +1,1 @@
+{"version":3,"sources":["widget.ts"],"names":[],"mappings":";AAAA,aAAA,QAAQ,IAAI","file":"widget.js","sourceRoot":"../src/ts","sourcesContent":["console.log(\"hey111\");\n"]}
