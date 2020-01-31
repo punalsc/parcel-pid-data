@@ -1,22 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "sourceMap": true,
     "module": "commonjs",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "jsx": "react",
-    "declaration": true,
-    "pretty": true,
-    "newLine": "lf",
-    "stripInternal": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noEmitOnError": true,
-
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
-  }
+    "target": "es5"
+  },
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }
